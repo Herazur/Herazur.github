@@ -1,0 +1,192 @@
+/* Sections */
+.section {
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center !important; 
+}
+.section-heading,
+.section-description {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+
+
+@media (min-width: 300px) {
+    .container-fluid {
+        max-width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        justify-content: center !important; 
+      }
+}
+
+@media (min-width: 1000px) {
+    .container-fluid {
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        justify-content: center !important; 
+      }
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+#back-up{
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 10000;
+}
+#back-up:hover{
+    opacity: 70%;
+}
+
+#back-up-icon{
+    width: 70px;
+}
+/* Heading */
+
+#particles-js{
+    content: "";
+    position: absolute;
+    max-width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.hero{
+    font-family: 'Raleway', Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.hero::before{
+    content: "";
+    background-image: url(../images/butterfly\ nebula.jpg); 
+    opacity: 60%;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -10;
+    max-height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+.selfie{
+    max-width: 300px;
+    height: 250px;
+    display: inline;
+}
+
+/* stolen and edited from https://codepen.io/karisabinemalmin/pen/exjeym */
+.circle {
+    margin-top: 5rem;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    animation: morph 3s linear infinite;
+    border: 0px;
+}
+.circle:hover {
+    animation: morph 0.5s linear infinite;
+}
+
+@keyframes morph {
+    0%, 100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+   }
+    34% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+   }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+   }
+}
+
+.name{
+    padding-top: 50px;
+}
+
+.intro{
+    display: flex;
+}
+
+.social{
+    display: inline-block;
+    width: 35px;
+    margin: 0 10px;
+}
+
+.social:hover{
+    opacity: 70%;
+}
+
+/* About Me */
+
+@media (min-width: 200px) {
+    #about-me{
+        margin: 0 5vh;
+        
+    }
+    #about-list{
+        margin: 0 10px;
+    }
+    #about-me-text{
+        text-align: left; 
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #about-me{
+        margin: 0 25vh !important;
+    }
+    
+    #about-list{
+        margin: 0 50px;
+    }
+
+    #about-me-text{
+        text-align: left; 
+        font-size: 15px;
+    }
+}
+
+
+
+.card{
+    background-color: var(--cardColor);
+    padding: 50px 50px 50px;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 3rem 0 rgb(0 0 0 / 50%);
+    border-radius: 25px;
+}
+
+#begin-button{
+    width: 250px;
+}
+
+/* Work */
+.work{
+    background-color: var(--bkgColor);
+}
