@@ -182,6 +182,10 @@ canvas {
     border-radius: 25px;
 }
 
+.fa {
+    font-size: 25px;
+}
+
 #begin-button{
     width: 250px;
 }
