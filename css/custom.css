@@ -130,6 +130,29 @@ canvas {
     display: flex;
 }
 
+.container
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px;
+    background: #000;
+}
+.container .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #ff0;
+    float: left;
+    margin: 15px;
+}
+
+.fa {
+    font-size: 3px;
+    color: rgb(22, 208, 221);
+}
+
 .social{
     display: inline-block;
     width: 35px;
