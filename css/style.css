@@ -1,4 +1,19 @@
-fa {
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px;
+    background: #000;
+}
+
+fab {
     font-size: 3px;
     color: rgb(22, 208, 221);
 }
