@@ -130,26 +130,6 @@ canvas {
     display: flex;
 }
 
-.container
-{
-    position: relative;
-    width: 1100px;
-    height: 200px;
-    margin: 180px;
-    background: #000;
-}
-.container .box
-{
-    position: relative;
-    width: calc(300px - 30px);
-    height: calc(200px - 30px);
-    background: #ff0;
-    float: left;
-    margin: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-}
 
 .fa {
     font-size: 3px;
